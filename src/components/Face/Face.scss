@@ -1,6 +1,13 @@
-.face {
-  font-size: 48px;
+@import "../../styles/index.scss";
+
+.Face {
+  width: 52px;
+  height: 52px;
+  font-size: 35px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  @include borders;
 }

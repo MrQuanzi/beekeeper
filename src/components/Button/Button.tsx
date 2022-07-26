@@ -1,13 +1,7 @@
 import React from "react";
-import Face from "../Face/Face";
 import "./Button.scss";
 
-const Button: React.FC = (props) => {
-  return (
-    <div className="button">
-      <Face character={"😎"}></Face>
-    </div>
-  );
+const Button: React.FC = () => {
+  return <div className="Button"></div>;
 };
-
 export default Button;

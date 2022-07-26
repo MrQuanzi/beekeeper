@@ -1,0 +1,20 @@
+nums1 = [2,7,11,15];
+target1 = 6;
+
+
+function twoSum(nums: number[], target: number): number[] {
+  let first: number;
+  let second: number;
+  for (let i = 0; i < nums.length; i++) {
+    first = nums[i];
+    for (let j = 0; j < nums.length && j !== i ) {
+      second = nums[j];
+    }
+    if (first + second === target) {
+      return [first, second]
+    }
+};
+  }
+  
+
+const output = function(nums1, target1);

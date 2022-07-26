@@ -2,11 +2,11 @@ import React from "react";
 import "./Face.scss";
 
 interface props {
-  character: string;
+  char: string;
 }
 
-const Face: React.FC<props> = ({ character }) => {
-  return <span className="face">{character}</span>;
+const Face: React.FC<props> = ({ char }) => {
+  return <span className="Face">{char}</span>;
 };
 
 export default Face;
