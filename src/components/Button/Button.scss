@@ -5,4 +5,18 @@
   @include buttons;
   width: 30px;
   height: 30px;
+
+  &.visible {
+    border-color: #7b7b7b;
+    border-width: 1px;
+  }
+
+  span {
+    font-size: 18px;
+    margin-left: 4px;
+    margin-top: 4px;
+    &.num {
+      margin-left: 9px;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 // Types used in the BeeKeeper app
 
 export enum CellValue {
-  none,
+  zero,
   one,
   two,
   three,
