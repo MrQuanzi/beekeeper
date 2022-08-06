@@ -10,7 +10,7 @@ const getGameBoard = (cols: number, rows: number, bees: number): Cell[][] => {
     for (let col = 0; col < MAX_COLS; col++) {
       cells[row].push({
         value: CellValue.zero,
-        state: CellState.hidden,
+        state: CellState.visible,
       });
     }
   }

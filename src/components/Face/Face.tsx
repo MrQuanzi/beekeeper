@@ -6,7 +6,13 @@ interface props {
 }
 
 const Face: React.FC<props> = ({ char }) => {
-  return <span className="Face">{char}</span>;
+  return (
+    <span className="Face">
+      <span role="img" aria-label="face">
+        {char}
+      </span>
+    </span>
+  );
 };
 
 export default Face;

@@ -1,5 +1,5 @@
 import React from "react";
-import { CellState, CellValue } from "../../types/types";
+import { CellState, CellValue, Emoji } from "../../types/types";
 import "./Button.scss";
 
 interface props {
@@ -14,14 +14,14 @@ const Button: React.FC<props> = ({ row, col, state, value }) => {
     if (state === CellState.flagged) {
       return (
         <span role="img" aria-label="flag">
-          🚩
+          {Emoji.flag}
         </span>
       );
     } else if (state === CellState.visible) {
       if (value === CellValue.bomb) {
         return (
           <span role="img" aria-label="bee">
-            🐝
+            {Emoji.bee}
           </span>
         );
       } else {
